@@ -18,7 +18,7 @@ int main() {
 		s = x[i] + s1;
 		s1 = s;
 		s2 = y[i] + s21;
-		s21 = s1;
+		s21 = s2;
 	}
 	long double p = s / n, p1 = s2 / n;
 	//cout<<"平均数为"<<p<<endl;
@@ -28,7 +28,7 @@ int main() {
 		k = x[i] * y[i] + k1;
 		k1 = k;
 		a = x[i] * x[i] + a1;
-		a = a1;
+		a1 = a;
 	}
 	long double f = (k - n * p * p1) / (a - n * p * p);
 	long double e = p1 - f * p;
